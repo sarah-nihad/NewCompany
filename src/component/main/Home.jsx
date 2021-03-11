@@ -3,7 +3,6 @@ import Context from '../../assets/js/context';
 import NavBar from './common/NavBar';
 import { withController } from 'react-scroll-parallax';
 import ScrollUpButton from "react-scroll-up-button";
-import ScrollAnimation from 'react-animate-on-scroll';
 import { Link } from 'react-router-dom';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import Services from './Services';
@@ -60,7 +59,7 @@ class Home extends React.Component {
                                         <div id='homeBgMainDiv' >
                                             <div id='homeBgMainP1'  >IT Solution for Your Business</div>
                                             <div></div>
-                                            <Link id='btn' >
+                                            <Link to='/Contact' id='btn' >
                                                 <div id='getInbtn' >
                                                     <span>  Get in Touch  <ArrowRightAltIcon /> </span>
                                                 </div>

@@ -1,12 +1,6 @@
 import React from 'react';
 import Context from '../../assets/js/context';
 import ScrollAnimation from 'react-animate-on-scroll';
-import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
-import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
-import LaptopWindowsIcon from '@material-ui/icons/LaptopWindows';
-import SettingsIcon from '@material-ui/icons/Settings';
-import CloudUploadIcon from '@material-ui/icons/CloudUpload';
-import DvrIcon from '@material-ui/icons/Dvr';
 import NavBar from './common/NavBar'; 
 import Footer from './common/Footer';
 import Particles from 'react-particles-js';
@@ -19,41 +13,30 @@ class Project extends React.Component {
 
             data: [
                 {
-                    "img": <PhoneAndroidIcon style={{ fontSize: 40 }} />,
+                    "img": require('../../assets/img/nirvana.jpg'),
 
                     "name": "Android Applications",
                     "desc": "Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit.",
                 },
                 {
-                    "img": <PhoneIphoneIcon style={{ fontSize: 40 }} />,
+                    "img": require('../../assets/img/qualia.jpg'),
 
                     "name": "IOS Applications",
                     "desc": "Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit.",
                 },
                 {
-                    "img": <LaptopWindowsIcon style={{ fontSize: 40 }} />,
+                    "img": require('../../assets/img/nirvana.jpg'),
 
                     "name": "Desktop Applications",
                     "desc": "Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit.",
                 },
                 {
-                    "img": <DvrIcon style={{ fontSize: 40 }} />,
+                    "img": require('../../assets/img/qualia.jpg'),
 
                     "name": "Web Applications",
                     "desc": "Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit.",
                 },
-                {
-                    "img": <CloudUploadIcon style={{ fontSize: 40 }} />,
-
-                    "name": "Cloud Development",
-                    "desc": "Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit.",
-                },
-                {
-                    "img": <SettingsIcon style={{ fontSize: 40 }} />,
-
-                    "name": "Corporate Solution",
-                    "desc": "Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit.",
-                },
+          
 
             ]
         }
@@ -89,6 +72,10 @@ class Project extends React.Component {
                                         }
                                     }}
                                 />
+                                <img src={require('../../assets/img/laptop.png')} alt='img' className='laptop-img' ></img>
+                                <video autoPlay loop >
+                         <source src={require('../../assets/Comp_1_x264_002.mp4')} type='video/mp4'  />
+                                </video>
                             </div>
                             <div id='ServicesContainer'  >
                                 <div style={{ marginBottom: '3%' }} >
@@ -111,7 +98,7 @@ class Project extends React.Component {
                                                         BROWSE
                                                         </div>
                                                     </div>
-                                                    <div id='imgBox'> <img src={require('../../assets/img/home007.jpg')} alt='img' />   </div>
+                                                    <div id='imgBox'> <img src={item.img} alt='img' />   </div>
 
 
                                                 </div>

@@ -6,7 +6,7 @@ import ScrollUpButton from "react-scroll-up-button";
 import { Row, Col } from 'react-bootstrap';
 import Footer from './common/Footer';
 import { TextInput, Textarea } from 'evergreen-ui';
-import axios from 'axios';
+// import axios from 'axios';
 
 // import { ToastContainer, toast } from 'react-toastify';
 class Contact extends React.Component {

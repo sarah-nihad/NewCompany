@@ -366,11 +366,13 @@
 }
 #project_bgb2{
     background-image: url(../img/mj22.jpg);
-    background-position: center;
+    /* background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
- height: 400px;
+ min-height: 600px; */
+ width: 100%;
+ height: 70vh;
 }
 #teamHomeSection{
     background-image: url(../img/download.jpg);
@@ -386,7 +388,7 @@ min-height: 600px;
   }
 /*////////////*Contact Us */
 #sectionContactBgImg {
-    background-image: url(../img//3834189-scaled.jpg);
+    background-image: url(../img/3817235-scaled.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -524,12 +526,54 @@ min-height: 600px;
   .side_text{
       color: #fff;
   }
+  .laptop-img{
+    width: 118vh;
+    height: 58.5vh;
+    position: absolute;
+    right: 6.3vh;
+    top: 25.5vh;
+    z-index: 2;
+  }
+  video {
+    width: 92vh;
+    height: 58.5vh;
+    position: absolute;
+    right: 19.3vh;
+    top: 22.5vh;
+    z-index: 1;
+}
   @media (min-width: 800px) {
     #aboutTitleTeam{
         margin-bottom: 15%;
     }
   }
+  @media screen and (max-width: 1024px){
+.laptop-img {
+    top: 22% ;
+    width: 52% ;
+    height: 43.5% ;
+    overflow: hidden;
+    right: 8% ;
+}
+video {
+    width: 40% ;
+    height: 52.5% ;
+    right: 14% ;
+    top: 16.5% ;
+    overflow: hidden;
+}
+}
 @media (max-width: 799px) {
+    .laptop-img {
+        top: 27% ;
+        right: 3% ;
+        width: 50% ;
+        height: 31.5% ;
+    }
+    video {
+        right: 8% ;
+        top: 14.5% ;
+    }
     #card{
         width: 400px;
     }
@@ -544,6 +588,20 @@ min-height: 600px;
     }
     #servicesImg2{
         font-size: 250px;
+    }
+  }
+  @media (max-width: 500px) {
+    .laptop-img {
+        top: 27% ;
+        right: 3% ;
+        width: 77% ;
+        height: 26.5% ;
+    }
+    video {
+        right: 0% ;
+        top: 29.5% ;
+        width: 352px;
+        height: 123px;
     }
   }
   @media (max-width: 375px) {
@@ -562,4 +620,16 @@ min-height: 600px;
     #servicesImg2{
         font-size: 250px;
     }
+    .laptop-img {
+        top: 32% ;
+        right: 5% ;
+        width: 74% ;
+        height: 16.5% ;
+    }
+    video{
+        right: 13% ;
+        top: 30.5% ;
+            width: 58% ;
+    height: 17.5% ;
+    } 
   }

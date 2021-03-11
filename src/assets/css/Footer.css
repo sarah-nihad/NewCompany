@@ -92,9 +92,9 @@
   .Explore-item li::before {
     left: 82px;
   }
-  .footer-social-media {
+  /* .footer-social-media {
     margin-left: 48px;
-  }
+  } */
 }
 @media screen and (max-width: 800px) {
   .explore-content {

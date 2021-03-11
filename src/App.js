@@ -54,6 +54,7 @@ class App extends React.Component {
             <Route  path='/About' component={About} />
             <Route  path='/Project' component={Project} />
             <Route  path='/Contact' component={Contact} />
+           
           </Switch>
         </Context.Provider>
       </BrowserRouter>

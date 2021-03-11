@@ -4,7 +4,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container,  Card } from "react-bootstrap";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import { Memberinfo } from "./Data.js";
 import Media from "react-media";
