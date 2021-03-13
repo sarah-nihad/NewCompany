@@ -1,11 +1,19 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-
+import MailIcon from '@material-ui/icons/Mail';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import PhoneIcon from '@material-ui/icons/Phone';
 function Footer() {
   return (
     <div className="footer">
+      <svg viewBox="0 0 1440 181" preserveAspectRatio="none" style={{ height: 100, width: "100%" }} className='css-1d3w5wq' >
+        <path style={{ fill: "rgb(255 255 255)", stroke: "rgb(255 255 255)", strokeWidth: 1, fillRule: 'nonzero' }} d="M0 96l60-10.7C120 75 240 53 360 74.7 480 96 600 160 720 176s240-16 360-42.7c120-26.3 240-48.3 300-58.6l60-10.7V0H0v96z"   >
+        </path>
+
+      </svg>
       <Container>
         <div className="footer-content">
+
           <div className=" first-col ">
             {/* start First column  */}
             <h2 className="logo">Future Company</h2>
@@ -51,7 +59,7 @@ function Footer() {
                 <li>
                   <a >Our Works</a>
                 </li>
-              
+
                 <li>
                   <a >Contact US</a>
                 </li>
@@ -64,15 +72,15 @@ function Footer() {
             {/* start Third column  */}
             <ul className="contact-item">
               <li>
-                <i class="fal fa-map-marker-alt"></i>
+                <LocationOnIcon />
                 <a >Harthiya,Baghdad,Iraq</a>
               </li>
               <li>
-                <i class="fab fa-whatsapp"></i>
+                <PhoneIcon />
                 <a >+964 1234556</a>
               </li>
               <li>
-                <i class="fal fa-envelope"></i>
+               <MailIcon />
                 <a >info@Future-Company</a>
               </li>
             </ul>

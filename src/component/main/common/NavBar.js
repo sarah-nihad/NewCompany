@@ -183,7 +183,7 @@ function SearchAppBar() {
 
               <React.Fragment >
                 <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
-                  <div style={{ backgroundColor: '#221a1c', minHeight: '100%' }}
+                  <div style={{ backgroundColor: 'rgb(0 0 0 / 54%)', minHeight: '100%' }}
                     className={classes.list}
                     role="presentation"
                

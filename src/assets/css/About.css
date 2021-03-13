@@ -31,7 +31,7 @@ header h2 {
 }
 
 .about-descrption {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 .about-descrption h2 {
   font-weight: bold;
@@ -84,6 +84,121 @@ header h2 {
 /* ----end FromSection----  */
 
 /* ----Start About-US----  */
+#mainCont_About2{
+  display: flex;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: #fcf8f8fa;
+  /* padding-top: 3%; */
+  padding-bottom: 3%;
+}
+#mainCont_About2_left{
+  width: 600px;
+  padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#mainCont_About2_left_title{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #5656d1;
+  padding: 20px;
+  /* width: 50%; */
+  margin-bottom: 3%;
+}
+#mainCont_About2_right{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 10px;
+}
+.cont_imgs {
+  margin-top: 60px;
+}
+.cont_img img {
+  width: 100%;
+  height: 100%;
+}
+.cont_imgs .cont_img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cont_imgs .one{
+  top:0;
+  animation: move_one 4s 0s linear infinite;
+}
+.cont_imgs .two{
+  top: 182px;
+  right: 8px;
+  animation: move_two 4s  2s linear infinite;
+}
+.cont_imgs .three{
+  top:250px;
+  animation: move_three 4s 2s linear infinite;
+}
+.cont_imgs .four{
+  top:15px;
+  animation: move_four 4s 0s linear infinite;
+}
+
+@keyframes move_one {
+  0%{
+      transform:translate(0,-10px)
+  }
+  50%{
+      transform:translate(0,-40px)
+  }
+  100%{
+      transform:translate(0,-10px)
+  }
+}
+
+@keyframes move_two {
+  0%{
+      transform:translate(0,-10px)
+  }
+  50%{
+      transform:translate(0,-40px)
+  }
+  100%{
+      transform:translate(0,-10px)
+  }
+}
+@keyframes move_three {
+  0%{
+      transform:translate(0,-10px)
+  }
+  50%{
+      transform:translate(0,-60px)
+  }
+  100%{
+      transform:translate(0,-10px)
+  }
+}
+@keyframes move_four {
+  0%{
+      transform:translate(0,-10px)
+  }
+  50%{
+      transform:translate(0,-70px)
+  }
+  100%{
+      transform:translate(0,-10px)
+  }
+}
+
+
+
+
+.about{
+  background-color: #fff;
+}
 .about-us {
   background-color: #f0f4f8;
   padding-top: 100px;

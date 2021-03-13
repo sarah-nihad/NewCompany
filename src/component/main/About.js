@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Col } from "react-bootstrap";
-import SectionWhy from "./SectionWhy";
+import   Services  from "./common/Services";
 import NavBar from './common/NavBar';
-import { aboutData } from "./Data";
-import TeamSection from "./TeamSection";
+import { aboutData } from "./common/Data";
+import TeamSection from "./common/TeamSection";
 import Footer from './common/Footer';
 function About(props) {
   return (
@@ -32,13 +32,13 @@ function About(props) {
        
         </Container>
       </div>
-      <SectionWhy />
-      <div id='aboutTitleTeam' style={{color:'#000'}  } >
+      <Services />
+      {/* <div id='aboutTitleTeam' style={{color:'#000'}  } >
           
           <small>WHO WE ARE</small>
           <h2>Meet The Team</h2>
         </div>
-      <TeamSection />
+      <TeamSection /> */}
      <Footer />
     </>
   );

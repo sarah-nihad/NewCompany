@@ -37,10 +37,10 @@ export const WhyData = [
   },
 ];
 export const Memberinfo = [
-  { id: 1, img: require('../../assets/img/team-img-1.jpg'), name: "Mary Lee", job: "Software Developer" },
-  { id: 2, img: require('../../assets/img/team-img-2.jpg'), name: "Mary Lee", job: "Software Developer" },
-  { id: 3, img: require('../../assets/img/team-img-3.jpg'), name: "Mary Lee", job: "Software Developer" },
-  {id: 4,img: require('../../assets/img/team-img-4.jpg'), name: "san Lee",job: "Software Developer"},
+  { id: 1, img: require('../../../assets/img/team-img-1.jpg'), name: "Mary Lee", job: "Software Developer" },
+  { id: 2, img: require('../../../assets/img/team-img-2.jpg'), name: "Mary Lee", job: "Software Developer" },
+  { id: 3, img: require('../../../assets/img/team-img-3.jpg'), name: "Mary Lee", job: "Software Developer" },
+  {id: 4,img: require('../../../assets/img/team-img-4.jpg'), name: "san Lee",job: "Software Developer"},
 ];
 export const aboutData = [
   {
@@ -67,11 +67,11 @@ export const aboutData = [
 ];
 
 export const logoData=[
-  {img:require('../../assets/img/React.svg')},
-  {img:require('../../assets/img/NodeJS.svg') },
-  {img:require('../../assets/img/Android.svg') },
-  {img:require('../../assets/img/Angular.svg') },
-  {img:require('../../assets/img/Flutter.svg') },
-  {img:require('../../assets/img/Laravel.svg') },
-  {img:require('../../assets/img/Wordpress.svg') }
+  {img:require('../../../assets/img/React.svg')},
+  {img:require('../../../assets/img/NodeJS.svg') },
+  {img:require('../../../assets/img/Android.svg') },
+  {img:require('../../../assets/img/Angular.svg') },
+  {img:require('../../../assets/img/Flutter.svg') },
+  {img:require('../../../assets/img/Laravel.svg') },
+  {img:require('../../../assets/img/Wordpress.svg') }
 ]

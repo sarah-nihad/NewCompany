@@ -6,7 +6,7 @@ import './assets/css/About.css';
 import "./assets/css/Footer.css";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Context from './assets/js/context';
-import Home from './component/main/Home';
+import Home from './component/main/Home/Home';
 import About from './component/main/About';
 import Project from './component/main/Project';
 import Contact from './component/main/Contact';

@@ -47,7 +47,7 @@ class Contact extends React.Component {
 
               <NavBar />
               <div style={{ width: '100%' }} id='sectionContactBgImg' >
-               
+               <div  id='contactHeader_bgb' />
               </div>
 
 

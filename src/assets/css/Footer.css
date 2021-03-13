@@ -1,6 +1,6 @@
 .footer {
   background-color: #000000;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .footer-content {
   display: flex;
@@ -90,7 +90,7 @@
     margin-bottom: 40px;
   }
   .Explore-item li::before {
-    left: 82px;
+    left: 30px;
   }
   /* .footer-social-media {
     margin-left: 48px;

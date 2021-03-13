@@ -1,5 +1,5 @@
 import React from 'react';
-import Context from '../../assets/js/context';
+import Context from '../../../assets/js/context';
 import ScrollAnimation from 'react-animate-on-scroll';
 import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
@@ -64,10 +64,8 @@ class Services extends React.Component {
                     return (
                         <div className='hometab box' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center',flexDirection:'column' }}>
                        
-                           
-                          
-                          
-                        <div id='ServicesContainer'  >
+                         <div id='ServicesContainer'  >
+                        <div></div>
                         <div style={{marginBottom:'3%'}} >
                                     <ScrollAnimation animateIn='flipInX' 
                                         animateOut='flipOutX' >

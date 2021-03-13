@@ -1,17 +1,18 @@
 import React from 'react';
-import Context from '../../assets/js/context';
-import NavBar from './common/NavBar';
+import Context from '../../../assets/js/context';
+import NavBar from '../common/NavBar';
 import { withController } from 'react-scroll-parallax';
 import ScrollUpButton from "react-scroll-up-button";
 import { Link } from 'react-router-dom';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
-import Services from './Services';
-import WhyUs from './WhyUs';
+import Services from '../common/Services';
+import WhyUs from '../WhyUs';
 import Particles from 'react-particles-js';
 import ProjectSection from './ProjectSection';
 import Logo1 from './Logo1';
-import TeamSection from './TeamSection';
-import Footer from './common/Footer';
+import TeamSection from '../common/TeamSection';
+import Footer from '../common/Footer';
+import AboutSection from './AboutSection';
 class Home extends React.Component {
 
     constructor(props) {
@@ -72,16 +73,18 @@ class Home extends React.Component {
                                         <Services />
                                         <WhyUs />
                                         <ProjectSection />
-                                        <Logo1 />
-                                        <div id='teamHomeSection' >
+                                     <AboutSection />
+                                        {/* <div id='teamHomeSection' >
                                             <div id='aboutTitleTeam' style={{ color: '#fff' }} >
 
                                                 <small>WHO WE ARE</small>
                                                 <h2>Meet The Team</h2>
                                             </div>
                                             <TeamSection />
+                                          
+                                        </div> */}
+                                        <Logo1 />
                                             <Footer />
-                                        </div>
                                         <ScrollUpButton
                                             StopPosition={0}
                                             ShowAtPosition={150}
