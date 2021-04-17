@@ -7,6 +7,7 @@ import "./assets/css/Footer.css";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Context from './assets/js/context';
 import Home from './component/main/Home/Home';
+import Main from './component/main/Home/Main';
 import About from './component/main/About';
 import Project from './component/main/Project';
 import Contact from './component/main/Contact';
@@ -50,7 +51,8 @@ class App extends React.Component {
 
           <Switch>
 
-            <Route exact path='/' component={Home} />
+            <Route exact path='/' component={Main} />
+            <Route  path='/Home' component={Home} />
             <Route  path='/About' component={About} />
             <Route  path='/Project' component={Project} />
             <Route  path='/Contact' component={Contact} />

@@ -489,6 +489,28 @@ min-height: 600px;
     justify-content: center;
     align-items: center;
   }
+  #contactMainForm_slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    /* background-color: #e1dcd1; */
+    background-image: url(../img/app-background.jpg);
+    border-radius: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #contact_main_slide{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+  }
   #textstyle {
     padding-left: 10px;
     height: 50px;
