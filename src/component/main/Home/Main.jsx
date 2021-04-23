@@ -40,9 +40,9 @@ y.style.position= 'absolute';
 y.style.left= 'auto';
 rotated2 = !rotated2;
 
-if (e===2) {
+if (e===4 || e===2  ) {
  
-  x.style.backgroundColor='rgb(10, 40, 97)'
+  x.style.backgroundColor='#13516d'
   x.style.height='100%'
   x.style.zIndex='-1'
   y.style.display='none'
@@ -65,26 +65,87 @@ if (e===2) {
         <div  >
           <NavBar />
           <div id='tpbgimg'   >
-            <svg  id='svg' viewBox="0 0 1440 181" xmlns='http://www.w3.org/2000/svg' preserveAspectRatio="none" style={{ height: 200, width: "100%" }} className='css-1d3w5wq' >
+            <svg  id='svg' viewBox="0 0 1440 181" xmlns='http://www.w3.org/2000/svg' preserveAspectRatio="none" style={{ height: 200, width: "100%" ,zIndex:'-1'}} className='css-1d3w5wq' >
               <linearGradient id='SVGID_1_' gradientUnits='userSpaceOnUse' x1='1543.491' y1='1474.8508' x2='2952.8528' y2='659.8721' >
                 <stop offset='0' style={{ stopColor: '#131217' }} />
                 <stop offset='1' style={{ stopColor: '#292A33' }} />
               </linearGradient>
 
-              <path className='st0' style={{ fill: "#0a2861", stroke: "#0a2861", strokeWidth: 1, fillRule: 'nonzero' }} d="M0 96l60-10.7C120 75 240 53 360 74.7 480 96 600 160 720 176s240-16 360-42.7c120-26.3 240-48.3 300-58.6l60-10.7V0H0v96z"   >
+              <path className='st0' style={{ fill: "#13516d", stroke: "#13516d", strokeWidth: 1, fillRule: 'nonzero' }} d="M0 96l60-10.7C120 75 240 53 360 74.7 480 96 600 160 720 176s240-16 360-42.7c120-26.3 240-48.3 300-58.6l60-10.7V0H0v96z"   >
               </path>
 
             </svg>
             <div id='title_main_slide'  >CS CODE</div>
           </div>
-          <Carousel wrap={false}  onSlide={(e) => {
+          <Carousel   wrap={false}  onSlide={(e) => {
             console.log(e);
             this.add(e)
           }} >
             <Carousel.Item   >
-            <div style={{display:'flex',alignItems:'center',justifyContent:'center',height:'100%'}} id='slide_main1' >
+            <div style={{display:'flex',alignItems:'center',justifyContent:'center',height:'100%',flexDirection:'row-reverse'}} id='slide_main1' >
             <img src={require('../../../assets/img/laptop3.png')} alt='img' id='main_slide_img' ></img>
-                               
+            <div className='tp-caption'>
+                      <a>
+
+                        <div className='tp-linesplit'>
+                          <div className='tp-wordsplit'>
+                            <div className='tp-charsplit'>
+                           U
+                          </div>
+                            <div className='tp-charsplit1'>
+                             I
+                          </div>
+                            <div className='tp-charsplit' style={{padding:'0 5px 0 5px'}} >
+                           
+                              /
+                          </div>
+                            <div className='tp-charsplit1'>
+                             U 
+                          </div>
+                            <div className='tp-charsplit'>
+                             X
+                          </div>
+                            <div className='tp-charsplit1' style={{padding:'0 5px 0 5px'}} >
+                            /  
+                          </div>
+                            <div className='tp-charsplit'>
+                               D
+                          </div>
+                            <div className='tp-charsplit1'>
+                             E
+                          </div>
+                            <div className='tp-charsplit'>
+                            V
+                          </div>
+                          <div className='tp-charsplit1'>
+                             E
+                          </div>
+                          <div className='tp-charsplit'>
+                            L
+                          </div>
+                          <div className='tp-charsplit1'>
+                             O
+                          </div>
+                          <div className='tp-charsplit'>
+                            P
+                          </div>
+                          <div className='tp-charsplit1'>
+                             M
+                          </div>
+                          <div className='tp-charsplit'>
+                            E
+                          </div>
+                          <div className='tp-charsplit1'>
+                             N
+                          </div>
+                          <div className='tp-charsplit'>
+                            T
+                          </div>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>              
               </div>  
            
             
@@ -93,32 +154,52 @@ if (e===2) {
               <div id='slotholder' >
                 <div id='tpbgimg1' ></div>
               </div>          
-              <div className='tp-parallax-wrap' style={{ position: 'absolute', display: 'block', visibility: 'visible', width: '100%', height: '100%', left: 0, top: 0, zIndex: 0 }} >
+              <div className='tp-parallax-wrap' style={{ position: 'absolute', display: 'block', visibility: 'visible', width: '100%', height: '100%', left: 0, top: 0,zIndex:0 }} >
                 <div className='tp-loop-wrap'>
                   <div className='tp-mask-wrap'>
                     <div className='tp-caption'>
-                      <a>
-                        <span />
-                      </a>
+                    <img src={require('../../../assets/img/hotel.png')} alt='img' id='img_slid_hotel'  />
                     </div>
                   </div>
                 </div>
               </div>
             </Carousel.Item>
-
+            <Carousel.Item  >
+              <div id='slotholder' >
+                <div id='tpbgimg2' ></div>
+              </div>          
+              <div className='tp-parallax-wrap' style={{ position: 'absolute', display: 'block', visibility: 'visible', width: '100%', height: '100%', left: 0, top: 0,zIndex:0 }} >
+                <div className='tp-loop-wrap'>
+                  <div className='tp-mask-wrap'>
+                    <div className='tp-caption'>
+                    <img src={require('../../../assets/img/doc.png')} alt='img' id='img_slid_doc'  />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item  >
+              <div id='slotholder' >
+                <div id='tpbgimg3' ></div>
+              </div>          
+              <div className='tp-parallax-wrap' style={{ position: 'absolute', display: 'block', visibility: 'visible', width: '100%', height: '100%', left: 0, top: 0, zIndex: 0 }} >
+                <div className='tp-loop-wrap'>
+                  <div className='tp-mask-wrap'>
+                    <div className='tp-caption'>
+                    <img src={require('../../../assets/img/shopping.png')} alt='img' id='img_slid_hotel'  />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Carousel.Item>
             <Carousel.Item>
               <div id='contact_main_slide'  >
-              
-           
-              
-             
-
-                
+                              
                 <div id='contactMainForm_slide'>
                 <Row style={{ marginRight: 0, width: '90%', paddingTop: '3%' }} >
                     <Col>
                       <div >
-                        <p style={{ fontSize: '26px', fontWeight: '500', lineHeight: '30px', color: '#d37541 ' }}>For More Inquiry Please Send as Email:</p>
+                        <p style={{ fontSize: '26px', fontWeight: '500', lineHeight: '30px', color: 'rgb(127 31 138)' }}>For More Inquiry Please Send as Email:</p>
 
                       </div>
                     </Col>

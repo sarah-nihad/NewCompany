@@ -532,15 +532,15 @@ min-height: 600px;
     font-size: 18px;
     font-weight: 400;
     border: none;
-    background-color: #d37541;
+    background-color: rgb(127 31 138);
     cursor: pointer;
     color: #fff;
   }
   
   #BtnContactUSHome:hover {
-    border: 2px solid #d37541;
+    border: 2px solid rgb(127 31 138);
     background-color: #fff;
-    color: #d37541;
+    color: rgb(127 31 138);
     transform: scale(1.05);
     transition-duration: 0.5s;
     transition-timing-function: linear;
@@ -548,7 +548,7 @@ min-height: 600px;
   
   #BtnContactUSHome:active {
     border: none;
-    background-color: #d37541;
+    background-color: rgb(127 31 138);
     color: #fff;
     transform: scale(1);
     transition-duration: 0.2s;
